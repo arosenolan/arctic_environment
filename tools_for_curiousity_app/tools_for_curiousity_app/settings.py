@@ -31,6 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'tools_for_curiousity_app',
+    'home.apps.HomeConfig',
+    't4c.apps.T4CConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
