@@ -26,7 +26,10 @@ SECRET_KEY = 'django-insecure-4mj0o930h6waf6#s8&0vn=oh757)h_$36u_o(a$p0nylx#rm0p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    # this is Jesse's. TODO: make locally configurable.
+    'morning-anchorage-91767.herokuapp.com'
+]
 
 
 # Application definition
@@ -110,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'EST'
-###TIME_ZONE = 'EDT'  # for when the time changes in the Fall
+# TIME_ZONE = 'EDT'  # for when the time changes in the Fall
 
 USE_I18N = True
 
