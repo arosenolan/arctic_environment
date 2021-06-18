@@ -31,6 +31,9 @@ ALLOWED_HOSTS = [
     'morning-anchorage-91767.herokuapp.com'
 ]
 
+if DEBUG:
+    ALLOWED_HOSTS += ['localhost', '127.0.0.1', '[::1]']
+
 
 # Application definition
 
