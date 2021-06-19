@@ -131,3 +131,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# npm
+node_modules/
+
+# built by webpack
+/tools_for_curiousity_app/t4c/static/t4c/dist

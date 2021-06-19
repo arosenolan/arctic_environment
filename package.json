@@ -1,0 +1,19 @@
+{
+  "name": "tools-for-curiousity-app",
+  "version": "1.0.0",
+  "description": "This repository hold everything for the Tools For Curiousity game.",
+  "scripts": {
+    "build": "webpack",
+    "build-dev": "webpack --watch --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billtorcaso/tools-for-curiousity-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
