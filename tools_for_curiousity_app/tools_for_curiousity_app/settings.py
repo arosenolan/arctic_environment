@@ -20,13 +20,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-4mj0o930h6waf6#s8&0vn=oh757)h_$36u_o(a$p0nylx#rm0p'
+SECRET_KEY = os.getenv(
+    'SECRET_KEY', 'django-insecure-4mj0o930h6waf6#s8&0vn=oh757)h_$36u_o(a$p0nylx#rm0p')
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv("DEBUG", "true") == "true"
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    # this is Jesse's. TODO: make locally configurable.
+    'morning-anchorage-91767.herokuapp.com'
+]
+
+if DEBUG:
+    ALLOWED_HOSTS += ['localhost', '127.0.0.1', '[::1]']
 
 
 # Application definition
@@ -110,7 +115,7 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'EST'
-###TIME_ZONE = 'EDT'  # for when the time changes in the Fall
+# TIME_ZONE = 'EDT'  # for when the time changes in the Fall
 
 USE_I18N = True
 
