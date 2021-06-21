@@ -1,4 +1,4 @@
-"""tools_for_curiousity_app URL Configuration
+"""tools_of_curiosity_app URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -24,8 +24,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
-### # This is for later ...  BT
-#### Use static() to add url mapping to serve static files during development (only)
+# This is for later ...  BT
+# Use static() to add url mapping to serve static files during development (only)
 ###from django.conf import settings
 ###from django.conf.urls.static import static
 ###

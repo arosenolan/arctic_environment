@@ -1,2 +1,2 @@
-# tools-for-curiousity-app
-This repository hold everything for the Tools For Curiousity game.
+# tools-of-curiosity-app
+This repository hold everything for the Tools Of Curiosity game.
