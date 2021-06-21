@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath ./tools_for_curiousity_app tools_for_curiousity_app.wsgi
+web: gunicorn --pythonpath ./tools_of_curiosity_app tools_of_curiosity_app.wsgi

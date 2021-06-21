@@ -1,5 +1,5 @@
 """
-WSGI config for tools_for_curiousity_app project.
+WSGI config for tools_of_curiosity_app project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tools_for_curiousity_app.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE',
+                      'tools_of_curiosity_app.settings')
 
 application = get_wsgi_application()
