@@ -26,7 +26,7 @@ SECRET_KEY = os.getenv(
 DEBUG = os.getenv("DEBUG", "true") == "true"
 
 ALLOWED_HOSTS = [
-    # this is attempting to allow every heroku app. TODO: make locally configurable.
+    # this allows every heroku app. TODO: make locally configurable.
     '.herokuapp.com'
 
 ]
