@@ -21,6 +21,7 @@ This repository hold everything for the Tools Of Curiosity game.
     * `heroku create`
 
 ## Running Locally
+* `source ./env/bin/activate`
 * `heroku local` 
 
 ## Deploying to Heroku
