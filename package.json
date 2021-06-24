@@ -15,5 +15,8 @@
   "devDependencies": {
     "webpack": "^5.39.1",
     "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "aframe": "^1.2.0"
   }
 }
