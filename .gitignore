@@ -136,4 +136,4 @@ dmypy.json
 node_modules/
 
 # built by webpack
-/tools_for_curiousity_app/t4c/static/t4c/dist
+/tools_of_curiosity_app/t4c/static/t4c/dist

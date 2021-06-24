@@ -8,7 +8,7 @@
             "name": "Python: Django",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/tools_for_curiousity_app/manage.py",
+            "program": "${workspaceFolder}/tools_of_curiosity_app/manage.py",
             "args": [
                 "runserver"
             ],
