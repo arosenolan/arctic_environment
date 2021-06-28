@@ -11,9 +11,9 @@ This repository hold everything for the Tools Of Curiosity game.
 
 ## Set up Python
 * Create a python virtualenv
-    * `virtualenv --python=python3 env`
+    * `virtualenv --python=python3 venv`
 * Install python requirements
-    * `./env/bin/pip install -r requirements.txt`
+    * `./venv/bin/pip install -r requirements.txt`
 
 ## Set up Heroku
 * Install the Heroku CLI from https://devcenter.heroku.com/articles/heroku-cli#download-and-install
@@ -21,7 +21,7 @@ This repository hold everything for the Tools Of Curiosity game.
     * `heroku create`
 
 ## Running Locally
-* `source ./env/bin/activate`
+* `source ./venv/bin/activate`
 * `heroku local` 
 
 ## Deploying to Heroku
