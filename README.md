@@ -19,10 +19,11 @@ This repository hold everything for the Tools Of Curiosity game.
 * Install the Heroku CLI from https://devcenter.heroku.com/articles/heroku-cli#download-and-install
 * Set up your heroku instance
     * `heroku create`
+* Follow setup instructions here: https://ankane.org/git-lfs-on-heroku
 
 ## Running Locally
 * `source ./venv/bin/activate`
 * `heroku local` 
 
 ## Deploying to Heroku
-* `git push heroku main`
+* `git push heroku main --no-verify`
