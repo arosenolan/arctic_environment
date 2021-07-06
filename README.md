@@ -27,6 +27,7 @@ This repository hold everything for the Tools Of Curiosity game.
 * `heroku local` 
 
 ## Deploying to Heroku
-* When you push to main, changes automatically appeat at https://tools-of-curiosity.herokuapp.com
+* When you push to main, changes automatically appear at https://tools-of-curiosity.herokuapp.com
+   * You can see [deployments happening here](https://github.com/Innovators-for-Purpose/tools-of-curiosity/deployments/activity_log?environment=tools-of-curiosity).
 * If you set up your own Heroku instance, use:
    * `git push heroku main --no-verify`
