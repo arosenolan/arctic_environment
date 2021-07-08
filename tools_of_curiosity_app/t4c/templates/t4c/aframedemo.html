@@ -3,21 +3,39 @@
   <head>
     <title>Hello, WebVR! - A-Frame</title>
     <meta name="description" content="Hello, WebVR! - A-Frame">
-    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
   </head>
   <body>
     <a-scene>
       <a-entity position="0 2.25 -15" particle-system="preset: snow"></a-entity>
       <a-plane
-        color="000000"
+        color="#FF0000"
         rotation="-90 0 0"
         width="30"
         height="30"
-        repeat="15 15"
-      ></a-plane>
+        repeat="15 15">
+      </a-plane>
+
     </a-scene>
-  </body>
+    <a-scene  cursor="rayOrigin: mouse;" raycaster="far: 100; objects: [link];">  
+    <a-assets>
+      <img id="previewDefault"  src="https://cdn.glitch.com/cbc6c6dc-6f33-48c9-a84e-de1e36f6f29b%2Fhdri-icebergs-ocean-abstract-background-hdri-environment-map-round-panorama-spherical-panorama-equidistant-projection-205133435.jpeg?v=1625751973966">
+   </a-assets>
+    
+   
+    
+    <a-sphere id="origin" radius="0.25" position="0 0 0" color="white"></a-sphere>
+    
+    <a-link	position="-4 1.6 -4" rotation="0 40 0"
+      href="demo.html" title="Volcano" image="#previewVolcano"></a-link>
+  
+   
+  
+       
+  
+  
+    </body>
 </html>
 
 
