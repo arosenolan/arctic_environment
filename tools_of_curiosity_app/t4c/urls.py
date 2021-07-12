@@ -12,5 +12,5 @@ urlpatterns = [
     path('minigame4/', views.minigame4, name='minigame4'),
     path('designsprint/', views.designsprint, name='designsprint'),
     path('designsprint2/', views.designsprint2, name='designsprint2'),
-   
+    path('Starter/', views.Starter, name='Starter'),
 ]

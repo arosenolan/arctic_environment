@@ -2,18 +2,18 @@
 <html>
   <head>
 
+
     <title>Hello, WebVR! - A-Frame</title>
     <meta name="description" content="Hello, WebVR! - A-Frame">
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    
-  </head>
+    <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-extras.animation-mixer@3.4.0/dist/aframe-extras.animation-mixer.js"></script>
+ 
+</head>
   <body>
-    <a-scene>
+    <a-scene  cursor="rayOrigin: mouse;" raycaster="far: 100; objects: [link];"> 
       <a-entity position="0 2.25 -15" particle-system="preset: snow"></a-entity>
       
-
-    </a-scene>
-    <a-scene  cursor="rayOrigin: mouse;" raycaster="far: 100; objects: [link];">  
     <a-assets>
       <img id="previewDefault"  src="https://cdn.glitch.com/cbc6c6dc-6f33-48c9-a84e-de1e36f6f29b%2Fhdri-icebergs-ocean-abstract-background-hdri-environment-map-round-panorama-spherical-panorama-equidistant-projection-205133435.jpeg?v=1625751973966">
    </a-assets>
@@ -23,16 +23,13 @@
     <a-sphere id="origin" radius="0.25" position="0 0 0" color="white"></a-sphere>
     
     <a-link	position="-4 1.6 -4" rotation="0 40 0"
-      href="Starter.html" title="Volcano" image="#previewDefault"></a-link>
+      href="Starter.html" title="arctic" image="#previewDefault"></a-link>
   
    
- <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-extras.animation-mixer@3.4.0/dist/aframe-extras.animation-mixer.js"></script>
-  </head>
-  
-    <a-scene>
+    
+   
       <a-entity environment="fog:0.72;dressingColor:#edf6f7;groundColor2:#a0a9b0;groundColor:#d8e7e9;horizonColor:#c6d5d7;skyColor:#848fe7;active:true;seed:11;skyType:gradient;lightPosition:0.5 1 0;flatShading:true;ground:canyon;groundYScale:9.76;groundTexture:walkernoise;dressing:stones;dressingAmount:500;dressingScale:0.06;dressingVariance:0.2 0.1 0.2;dressingOnPlayArea:1;gridColor:#239893;preset:yavapai" preset-switcher="" id="environment"><a-entity class="environment" position="0 50 0" light="intensity:0.6;color:#c1c7f3;groundColor:#d8e7e9;type:hemisphere"></a-entity><a-entity class="environment" position="0.5 1 0" light="shadowCameraLeft:-10;shadowCameraBottom:-10;shadowCameraRight:10;shadowCameraTop:10;intensity:0.6"></a-entity><a-entity rotation="-90 0 0" class="environmentGround environment" scale="1 1 9.76" shadow="cast:false;receive:false"></a-entity><a-entity class="environmentDressing environment"></a-entity><a-sky radius="200" theta-length="110" class="environment" geometry="" material="shader:gradientshader;topColor:#848fe7;bottomColor:#c6d5d7;npot:false"></a-sky><a-entity id="stars" visible="false"></a-entity></a-entity>
     </a-scene>
   </body>
-</html>
+</html> 
 
