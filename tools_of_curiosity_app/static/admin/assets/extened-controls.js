@@ -143,14 +143,14 @@ AFRAME.registerComponent('extended-wasd-controls', {
 				this.rotatePercent.set(0,0);
 
 				if (this.isKeyPressed(this.data.lookUpKey))
-					this.rotatePercent.x += 1;
+					this.rotatePercent.x += 3;
 				if (this.isKeyPressed(this.data.lookDownKey))
-					this.rotatePercent.x -= 1;
+					this.rotatePercent.x -= 3;
 
 				if (this.isKeyPressed(this.data.turnLeftKey))
-					this.rotatePercent.y += 1;
+					this.rotatePercent.y += 3;
 				if (this.isKeyPressed(this.data.turnRightKey))
-					this.rotatePercent.y -= 1;
+					this.rotatePercent.y -= 3;
 
 				// center on horizon
 				if (this.isKeyPressed(this.data.lookUpKey) && this.isKeyPressed(this.data.lookDownKey))
@@ -198,21 +198,21 @@ AFRAME.registerComponent('extended-wasd-controls', {
 			this.movePercent.set(0,0,0)
 
 			if (this.isKeyPressed(this.data.moveForwardKey))
-				this.movePercent.z += 1;
+				this.movePercent.z += 3;
 			if (this.isKeyPressed(this.data.moveBackwardKey))
-				this.movePercent.z -= 1;
+				this.movePercent.z -= 3;
 
 			if (this.isKeyPressed(this.data.moveRightKey))
-				this.movePercent.x += 1;
+				this.movePercent.x += 3;
 			if (this.isKeyPressed(this.data.moveLeftKey))
-				this.movePercent.x -= 1;
+				this.movePercent.x -= 3;
 
 			if ( this.data.flyEnabled )
 			{
 				if (this.isKeyPressed(this.data.moveUpKey))
-					this.movePercent.y += 1;
+					this.movePercent.y += 3;
 				if (this.isKeyPressed(this.data.moveDownKey))
-					this.movePercent.y -= 1;
+					this.movePercent.y -= 3;
 			}
 		}
 		else // other, e.g. "joystick"
