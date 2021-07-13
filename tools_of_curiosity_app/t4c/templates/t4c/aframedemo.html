@@ -7,44 +7,16 @@
    <script src="/static/admin/assets/extened-controls.js"></script>
    <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
    <script src="https://unpkg.com/aframe-extras.animation-mixer@3.4.0/dist/aframe-extras.animation-mixer.js"></script>
-  
+   <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+   <script src="/static/admin/assets/aframe-physics-system.js"></script>
+
  </head>
 
  <body>
 
-    <a-scene>
-  
-     <a-assets>
-       <a-asset-item id="glacier" src="/static/admin/assets/Glacier_Dallas.glb"></a-asset-item>
-     </a-assets>
-    </a-scene>
-     <a-entity
-       environment="preset: yavapai; active: true; seed: 11; skyType: gradient; skyColor: #526ae5; horizonColor: #cef3f3; lightPosition: 0.5 1 0; fog: 0.8; flatShading: true; ground: canyon; groundYScale: 9.76; groundTexture: walkernoise; groundColor: #b7c4c8; groundColor2: #dde7ee; dressing: stones; dressingAmount: 500; dressingColor: #ffffff; dressingScale: 0.06; dressingVariance: 0.2 0.1 0.2; dressingOnPlayArea: 1; gridColor: #239893"
-       viesible="">
-     </a-entity>
-     <a-entity gtlf-model="#glacier"  position="3 3 3" scale=".5 .5 .5"></a-entity>
-     <a-entity id="camera" camera
-     position="0 1.6 0"
-     extended-wasd-controls="flyEnabled: true; turnEnabled: true; lookEnabled: true; maxLookAngle: 60;">
-    </a-entity>
-      <a-cursor>
-      </a-cursor>
-    
-    </a-scene>
-
-<head>
-  
-  <script src="/static/admin/assets/extened-controls.js"></script>
-  <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
-  <script src="https://unpkg.com/aframe-extras.animation-mixer@3.4.0/dist/aframe-extras.animation-mixer.js"></script>
-  <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
-  <script src="/static/admin/assets/aframe-physics-system.js"></script>
-</head>
-
-<body>
   <a-scene>
     <a-assets>
-      <a-asset-item
+       <a-asset-item
           id="snowmen1"
           src="/static/admin/assets/Snowmen1.glb">
         </a-asset-item>
@@ -60,7 +32,11 @@
           id="snowmen4"
           src="/static/admin/assets/Snowmen4.glb">
         </a-asset-item>
-    </a-assets>
+        <a-asset-item
+         id="glacier"
+         src="/static/admin/assets/Glacier_Dallas.glb">
+        </a-asset-item>
+      </a-assets>
    
     <a-entity
       environment="preset: yavapai; active: true; seed: 11; skyType: gradient; skyColor: #526ae5; horizonColor: #cef3f3; lightPosition: 0.5 1 0; fog: 0.8; flatShading: true; ground: canyon; groundYScale: 9.76; groundTexture: walkernoise; groundColor: #b7c4c8; groundColor2: #dde7ee; dressing: stones; dressingAmount: 500; dressingColor: #ffffff; dressingScale: 0.06; dressingVariance: 0.2 0.1 0.2; dressingOnPlayArea: 1; gridColor: #239893"
@@ -70,7 +46,7 @@
     <a-entity gltf-model="#snowmen1" position="30 -2.2 4" rotation="0 60 0"></a-entity>
     <a-entity gltf-model="#snowmen2" position="0 0 0" scale=".5 .5 .5"></a-entity>
     <a-entity gltf-model="#snowmen3" position="0 -.6 0" scale=".2 .2 .2" rotation="0 135 0"></a-entity>
-    
+    <a-entity gtlf-model="#glacier"  position="2 2 1" scale=".5 .5 .5"></a-entity>
     <a-entity id="camera" camera look-controls
       position="0 1.6 0"
       extended-wasd-controls="flyEnabled: true; turnEnabled: true; lookEnabled: true; maxLookAngle: 60;">
