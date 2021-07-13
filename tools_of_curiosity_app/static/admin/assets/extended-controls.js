@@ -2,17 +2,8 @@ AFRAME.registerComponent('extended-wasd-controls', {
 
 	schema: 
 	{
-		
-		moveForwardKey:  {type: 'string', default: "W"},
-		moveBackwardKey: {type: 'string', default: "S"},
-		moveLeftKey:     {type: 'string', default: "A"},
-		moveRightKey:    {type: 'string', default: "D"},
 		moveUpKey:       {type: 'string', default: "R"},
 		moveDownKey:     {type: 'string', default: "F"},
-		turnLeftKey:     {type: 'string', default: "Q"},
-		turnRightKey:    {type: 'string', default: "E"},
-		lookUpKey:       {type: 'string', default: "T"},
-		lookDownKey:     {type: 'string', default: "G"},
 		
   		flyEnabled:  {type: 'boolean', default: true},
   		turnEnabled: {type: 'boolean', default: true},
@@ -21,7 +12,7 @@ AFRAME.registerComponent('extended-wasd-controls', {
   		maxLookEnabled: {type: 'boolean', default: true},
   		maxLookAngle:   {type: 'number',  default: 60},
 
-  		moveSpeed: {type: 'number', default: 1},  // A-Frame units/second
+  		moveSpeed: {type: 'number', default: 5},  // A-Frame units/second
 		turnSpeed: {type: 'number', default: 30}, // degrees/second
 		lookSpeed: {type: 'number', default: 30},  // degrees/second
 
