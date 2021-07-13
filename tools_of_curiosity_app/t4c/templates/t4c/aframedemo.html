@@ -10,21 +10,33 @@
  <body>
 
     <a-asset-item
-       id="snowmen1"
-       src="/static/admin/assets/Animated_Snowman1.glb">
-     </a-asset-item>
-     <a-asset-item
-       id="snowmen2"
-       src="/static/admin/assets/Animated_Snowman2.glb">
-     </a-asset-item>
-     <a-asset-item
-       id="snowmen3"
-       src="/static/admin/assets/Animated_Snowman3.glb">
-     </a-asset-item>
-     <a-asset-item
+      id="snowmen1"
+      src="/static/admin/assets/Animated_Snowman1.glb">
+    </a-asset-item>
+    <a-asset-item
+      id="snowmen2"
+      src="/static/admin/assets/Animated_Snowman2.glb">
+    </a-asset-item>
+    <a-asset-item
+      id="snowmen3"
+      src="/static/admin/assets/Animated_Snowman3.glb">
+    </a-asset-item>
+    <a-asset-item
       id="glacier"
       src="/static/admin/assets/Glacier_Dallas.glb">
-   </a-asset-item>
+    </a-asset-item>
+    <a-asset-item
+      id="redsnow"
+      src="/static/admin/assets/Animated_RedSnowman.glb">
+    </a-asset-item>
+    <a-asset-item
+      id="fox"
+      src="/static/admin/assets/ArticFox_Dallas.glb">
+    </a-asset-item>
+    <a-asset-item
+      id="fox"
+      src="/static/admin/assets/PolarAnimation_Dallas.glb">
+    </a-asset-item>
   
   <a-scene>
    
@@ -39,7 +51,11 @@
     <a-entity gltf-model="#glacier" position="5.000 1.597 -23.097" scale=".2 .2 .2" rotation="0 135 0"></a-entity>
     <a-entity gltf-model="#glacier" position="-28.246 2.495 0.000" scale=".2 .2 .2" rotation="0.000 -147.026 0.000"></a-entity>
     <a-entity gltf-model="#glacier" position="27.738 1.440 5.007" scale=".2 .2 .2" rotation="0 46.505 0"></a-entity>
-    
+    <a-entity gltf-model="#poli" position="6 0 4" rotation="0 60 0" animation-mixer=""></a-entity>
+    <a-entity gltf-model="#redsnow" position="6 0 4" rotation="0 60 0" animation-mixer=""></a-entity>
+    <a-entity gltf-model="#poli" position="2 -2.2 4" rotation="0 60 0" animation-mixer=""></a-entity>
+    <a-entity gltf-model="#fox" position="3.000 2.444 -18.664" rotation="0 60 0" scale=".5 .5 .5" animation-mixer=""></a-entity>
+
     <a-camera extended-wasd-controls>
       <a-cursor>
       </a-cursor>
